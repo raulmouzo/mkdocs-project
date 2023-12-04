@@ -1,0 +1,43 @@
+site_name: Documentación praticas LSI
+theme:
+  name: material
+
+  # Links de features 
+
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/# navigation-sections-with-sections
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+  
+  features: 
+    - navigation.tabs # Añade pestañas (si el layout es mayor a 1220px)
+    - navigation.sections # Añade secciones
+    - toc.integrate # Borra la tabla de contenidos
+    - navigation.top # Añade un botón "Back-to-top"
+    - search.suggest # Sugiere palabras en la búsqueda
+    - search.highlight # Subraya todos los resultados de la búsqueda
+    - content.tabs.link 
+    - content.code.annotation # Permite crear comentarios
+    - content.code.copy # Permiten copiar el codigo del "code block"
+  language: en
+
+  # Switch oscuro/claro
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+      primary: teal
+      accent: lime
