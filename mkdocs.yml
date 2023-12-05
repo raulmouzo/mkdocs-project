@@ -1,6 +1,19 @@
 site_name: Documentación praticas LSI
+repo_url: https://github.com/raulmouzo/mkdocs-project
+site_description: Página de documentación de LSI por la Universidad de La Coruña.
+site_author: Raúl Mouzo
+copyright: © 2023 Universidad de La Coruña. Todos los derechos reservados.
+
+nav: 
+  - Home: index.md
+  - 'Práctica 1': 'p1.md'
+  - 'Práctica 2': 'p2.md'
+  - 'Práctica 3': 'p3.md'
+
+
 theme:
   name: material
+  logo: https://i.ibb.co/gJ0VqcD/logo.png
 
   # Links de features 
 
