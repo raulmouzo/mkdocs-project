@@ -54,3 +54,12 @@ theme:
         name: Switch to light mode
       primary: teal
       accent: lime
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: http://www.facebook.com/FIC.UDC
+    - icon: fontawesome/brands/twitter
+      link: http://twitter.com/#!/FIC_UDC
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC3uk5vkUEJUI_NuWrYP_UXw
