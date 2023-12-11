@@ -1,4 +1,6 @@
-# Documentación Prácticas LSI 0.1
+# Documentación Prácticas LSI 0.2
+
+NUEVA ACTUALIZACIÓN!! 0.2 DISPONIBLE
 
 Bienvenido a la Bitácora de Prácticas de Lógica de Sistemas Integrados (LSI).
 
