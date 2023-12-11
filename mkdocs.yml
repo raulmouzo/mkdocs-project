@@ -63,3 +63,5 @@ extra:
       link: http://twitter.com/#!/FIC_UDC
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UC3uk5vkUEJUI_NuWrYP_UXw
+  version:
+    provider: mike

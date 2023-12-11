@@ -1,5 +1,7 @@
 # Documentación Prácticas LSI 💻
 
+NUEVA VERSIÓN: 0.1 !!
+
 Bienvenido a la Bitácora de Prácticas de Lógica de Sistemas Integrados (LSI).
 
 ## Introducción
