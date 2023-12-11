@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block outdated %}
+  No estás en la última versión de la documentación.
+  <a href="{{ '../' ~ base_url }}"> 
+    <strong>Haz click aquí para ir a la última versión</strong>
+  </a>
+{% endblock %}
