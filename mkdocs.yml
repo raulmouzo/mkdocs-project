@@ -9,6 +9,11 @@ nav:
   - 'Práctica 1': 'p1.md'
   - 'Práctica 2': 'p2.md'
   - 'Práctica 3': 'p3.md'
+  - 'Jupyter Notebook': Notebook.ipynb
+
+plugins:
+    - mkdocs-jupyter # Jupyter Notebooks plugin
+
 
 
 theme:
