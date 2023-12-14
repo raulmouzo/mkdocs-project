@@ -13,6 +13,7 @@ nav:
   - 'Diagramas': mermaid_diagrams.md
 plugins:
     - mkdocs-jupyter # Jupyter Notebooks plugin
+    - search
 
 
 
