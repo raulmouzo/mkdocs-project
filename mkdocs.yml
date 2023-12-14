@@ -10,7 +10,7 @@ nav:
   - 'Práctica 2': 'p2.md'
   - 'Práctica 3': 'p3.md'
   - 'Jupyter Notebook': Notebook.ipynb
-
+  - 'Diagramas': mermaid_diagrams.md
 plugins:
     - mkdocs-jupyter # Jupyter Notebooks plugin
 
@@ -71,4 +71,11 @@ extra:
       link: https://www.youtube.com/channel/UC3uk5vkUEJUI_NuWrYP_UXw
   version:
     provider: mike
+  
+markdown_extensions:
+  - pymdownx.superfences: 
+      custom_fences:
+        - name: mermaid # mermaid diagrams 
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   

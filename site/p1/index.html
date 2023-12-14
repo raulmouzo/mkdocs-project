@@ -277,6 +277,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../mermaid_diagrams/" class="md-tabs__link">
+        
+  
+    
+  
+  Diagramas
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -520,6 +537,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mermaid_diagrams/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagramas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -547,11 +584,11 @@
 <ol>
 <li><strong>Cambio de Configuración en la Interfaz de Red <code>ens33</code> de Estática a Dinámica</strong></li>
 </ol>
-<pre><code class="language-bash">iface ens33 inet static
-    address 10.11.48.122/23 # Nuestra dirección IP con mascara de capa 255.255.254.0
-    gateway 10.11.48.1 # Salida a internet por la primera dirección IP de la red
-    dns-nameservers 10.8.12.47 10.8.12.49 10.8.12.50 # Direcciones IP de los servidores DNS 
-</code></pre>
+<div class="highlight"><pre><span></span><code>iface<span class="w"> </span>ens33<span class="w"> </span>inet<span class="w"> </span>static
+<span class="w">    </span>address<span class="w"> </span><span class="m">10</span>.11.48.122/23<span class="w"> </span><span class="c1"># Nuestra dirección IP con mascara de capa 255.255.254.0</span>
+<span class="w">    </span>gateway<span class="w"> </span><span class="m">10</span>.11.48.1<span class="w"> </span><span class="c1"># Salida a internet por la primera dirección IP de la red</span>
+<span class="w">    </span>dns-nameservers<span class="w"> </span><span class="m">10</span>.8.12.47<span class="w"> </span><span class="m">10</span>.8.12.49<span class="w"> </span><span class="m">10</span>.8.12.50<span class="w"> </span><span class="c1"># Direcciones IP de los servidores DNS </span>
+</code></pre></div>
 <ol>
 <li>
 <p><strong>Análisis de Archivos de Configuración</strong></p>
@@ -579,33 +616,33 @@
 <ol>
 <li><strong>Identificación de la Distribución y Versión Inicial</strong></li>
 </ol>
-<pre><code class="language-bash">$ cat /etc/os-release
-PRETTY_NAME=&quot;Debian GNU/Linux 10 (buster)&quot;
-NAME=&quot;Debian GNU/Linux&quot;
-VERSION_ID=&quot;10&quot;
-VERSION=&quot;10 (buster)&quot;
-VERSION_CODENAME=buster
-ID=debian
-HOME_URL=&quot;https://www.debian.org/&quot;
-SUPPORT_URL=&quot;https://www.debian.org/support&quot;
-BUG_REPORT_URL=&quot;https://bugs.debian.org/&quot;
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>/etc/os-release
+<span class="nv">PRETTY_NAME</span><span class="o">=</span><span class="s2">&quot;Debian GNU/Linux 10 (buster)&quot;</span>
+<span class="nv">NAME</span><span class="o">=</span><span class="s2">&quot;Debian GNU/Linux&quot;</span>
+<span class="nv">VERSION_ID</span><span class="o">=</span><span class="s2">&quot;10&quot;</span>
+<span class="nv">VERSION</span><span class="o">=</span><span class="s2">&quot;10 (buster)&quot;</span>
+<span class="nv">VERSION_CODENAME</span><span class="o">=</span>buster
+<span class="nv">ID</span><span class="o">=</span>debian
+<span class="nv">HOME_URL</span><span class="o">=</span><span class="s2">&quot;https://www.debian.org/&quot;</span>
+<span class="nv">SUPPORT_URL</span><span class="o">=</span><span class="s2">&quot;https://www.debian.org/support&quot;</span>
+<span class="nv">BUG_REPORT_URL</span><span class="o">=</span><span class="s2">&quot;https://bugs.debian.org/&quot;</span>
 
-$ lsb_release -a
-No LSB modules are available.
-Distributor ID: Debian
-Description: Debian GNU/Linux 10 (buster)
-Release: 10
-Codename: buster
+$<span class="w"> </span>lsb_release<span class="w"> </span>-a
+No<span class="w"> </span>LSB<span class="w"> </span>modules<span class="w"> </span>are<span class="w"> </span>available.
+Distributor<span class="w"> </span>ID:<span class="w"> </span>Debian
+Description:<span class="w"> </span>Debian<span class="w"> </span>GNU/Linux<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="o">(</span>buster<span class="o">)</span>
+Release:<span class="w"> </span><span class="m">10</span>
+Codename:<span class="w"> </span>buster
 
-$ uname -a
-Linux debian 4.19.0-25-amd64 #1 SMP Debian 4.19.289-2 (2023-08-08) x86_64 GNU/Linux
-</code></pre>
+$<span class="w"> </span>uname<span class="w"> </span>-a
+Linux<span class="w"> </span>debian<span class="w"> </span><span class="m">4</span>.19.0-25-amd64<span class="w"> </span><span class="c1">#1 SMP Debian 4.19.289-2 (2023-08-08) x86_64 GNU/Linux</span>
+</code></pre></div>
 <ol>
 <li><strong>Actualización de la Máquina a la Última Versión Estable</strong></li>
 </ol>
 <p>Puedes actualizar tu máquina ejecutando el siguiente comando:</p>
-<pre><code class="language-bash">sudo apt update &amp;&amp; sudo apt upgrade -y
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
+</code></pre></div>
 <p>¡Gracias por utilizar nuestra documentación!</p>
 
 

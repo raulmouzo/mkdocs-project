@@ -1,6 +1,8 @@
-# Documentación Prácticas LSI 0.3
+# Documentación Prácticas LSI 4.0
 
-NUEVA ACTUALIZACIÓN!! 0.3 DISPONIBLE (AHORA CON JUPYTER NOTEBOOKS!!)
+NUEVA ACTUALIZACIÓN!! 4.0
+
+**Integrados diagramas con mermaid**
 
 Bienvenido a la Bitácora de Prácticas de Lógica de Sistemas Integrados (LSI).
 
