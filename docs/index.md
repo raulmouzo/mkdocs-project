@@ -1,31 +1,23 @@
-# Documentación Prácticas LSI 4.0
+# Guía de Documentación en MkDocs
 
-NUEVA ACTUALIZACIÓN!! 4.0
+¡Bienvenido a nuestra guía de documentación en MkDocs!
 
-**Integrados diagramas con mermaid**
+## Acerca de esta Guía
 
-Bienvenido a la Bitácora de Prácticas de Lógica de Sistemas Integrados (LSI).
+Esta página tiene como objetivo proporcionar una guía sobre cómo crear documentación efectiva utilizando la herramienta MkDocs. MkDocs es un generador de sitios estáticos diseñado específicamente para la creación de documentación.
 
-## Introducción
+## Contenidos
 
-Este repositorio contiene la documentación detallada de las prácticas realizadas en el curso de LSI. Aquí encontrarás información sobre cada práctica, incluyendo instrucciones, código fuente, resultados y cualquier otra información relevante.
+- **Conceptos Básicos**: Aquí encontrarás explicaciones detalladas sobre los conceptos fundamentales relacionados con MkDocs y la creación de documentación.
 
-## Estructura del Repositorio
+- **Cómo Hacerlo (How To)**: En esta sección, te guiaremos paso a paso a través de la creación de tu propia documentación utilizando MkDocs.
 
-El repositorio está organizado de la siguiente manera:
+## Material for MkDocs
 
-- **Practica1:** Descripción de la primera práctica.
-- **Practica2:** Desarrollo y resultados de la segunda práctica.
-- **Practica3:** Detalles de la tercera práctica, y así sucesivamente.
+Hemos elegido utilizar "Material for MkDocs", un tema moderno y atractivo, para mejorar la apariencia de tu documentación. Este tema proporciona una experiencia de usuario elegante y fácil de navegar.
 
-## Cómo Utilizar Esta Documentación
+## Recursos Adicionales
 
-Para acceder a la información de una práctica específica, simplemente navega a la carpeta correspondiente en la barra de navegación a la izquierda. Dentro de cada carpeta, encontrarás archivos y subdirectorios que te guiarán a través de los diferentes aspectos de la práctica.
+- **MkDocs**: [Sitio oficial de MkDocs](https://www.mkdocs.org/)
+- **Material for MkDocs**: [Repositorio de Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
 
-## Contribuciones
-
-Este repositorio está abierto a contribuciones. Si encuentras errores, tienes sugerencias de mejora o deseas contribuir con nuevas prácticas, ¡no dudes en hacerlo! Consulta el archivo CONTRIBUTING.md para obtener más detalles.
-
-¡Gracias por utilizar nuestra documentación!
-
-**Este texto ha sido creado por chatgpt** 🤓

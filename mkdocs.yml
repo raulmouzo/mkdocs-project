@@ -1,82 +1,78 @@
-site_name: Documentación praticas LSI
-repo_url: https://github.com/raulmouzo/mkdocs-project/
-site_description: Página de documentación de LSI por la Universidad de La Coruña.
-site_author: Raúl Mouzo
-copyright: © 2023 Universidad de La Coruña. Todos los derechos reservados.
+site_name: Documentación en MkDocs
+# repo_url: https://github.com/username/mkdocs-documentation/
+site_description: MkDocs documentation website.
+site_author: Facultad de Informática de A Coruña
+copyright: 2023 Universidad de La Coruña. Todos los derechos reservados.
+docs_dir: docs
+
 
 nav: 
-  - Home: index.md
-  - 'Práctica 1': 'p1.md'
-  - 'Práctica 2': 'p2.md'
-  - 'Práctica 3': 'p3.md'
-  - 'Jupyter Notebook': Notebook.ipynb
-  - 'Diagramas': mermaid_diagrams.md
-plugins:
-    - mkdocs-jupyter # Jupyter Notebooks plugin
-    - search
-
-
-
+  - 'Inicio': index.md
+  - 'Configuración básica': 'mk_basics.md'
+  - 'Importar documentación': 'mk_documentation.md'
+  - 'Temas': 'mk_themes.md'
+  - Material for MkDocs:
+    - Configuración básica: 
+      - Colores: mat_conf/mat_conf_colors.md
+      - Fuentes: mat_conf/mat_conf_fonts.md
+      - Lenguajes: mat_conf/mat_conf_lang.md
+      - Búsqueda: mat_conf/mat_conf_search.md
+      - Versionado: mat_conf/mat_conf_versions.md
+    - 'Elementos funcionales':
+      - Admonitions: mat_ele/mat_ele_admonitions.md
+      - Anotaciones: mat_ele/mat_ele_annotations.md
+      - Bloques de código: mat_ele/mat_ele_codeblocks.md
+      - Pestañas de contenido: mat_ele/mat_ele_content_tabs.md
+      - Diagramas: mat_ele/mat_ele_diagrams.md
+  - Otras funcionalidades:
+    - Jupyter Notebooks: other/jupyter_notebooks_example.ipynb
 theme:
   name: material
-  custom_dir: overrides
-  logo: https://i.ibb.co/gJ0VqcD/logo.png
+  language: es
+  features:
+    - content.code.copy
 
-  # Links de features 
-
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/# navigation-sections-with-sections
-  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/
-  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
-  
-  features: 
-    - navigation.tabs # Añade pestañas (si el layout es mayor a 1220px)
-    - navigation.sections # Añade secciones
-    - toc.integrate # Borra la tabla de contenidos
-    - navigation.top # Añade un botón "Back-to-top"
-    - search.suggest # Sugiere palabras en la búsqueda
-    - search.highlight # Subraya todos los resultados de la búsqueda
-    - content.tabs.link 
-    - content.code.annotation # Permite crear comentarios
-    - content.code.copy # Permiten copiar el codigo del "code block"
-  language: en
-
-  # Switch oscuro/claro
-  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
-
+  icon:
+    annotation: material/plus-circle
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-
-    # Palette toggle for dark mode
+        name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to light mode
-      primary: teal
-      accent: lime
+        icon: material/toggle-switch-off
+        name: Cambiar a modo claro
 
-extra:
-  social:
-    - icon: fontawesome/brands/facebook
-      link: http://www.facebook.com/FIC.UDC
-    - icon: fontawesome/brands/twitter
-      link: http://twitter.com/#!/FIC_UDC
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UC3uk5vkUEJUI_NuWrYP_UXw
-  version:
-    provider: mike
-  
+  font:
+    text: Montserrat
+    code: Montserrat Mono
+
 markdown_extensions:
-  - pymdownx.superfences: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
       custom_fences:
-        - name: mermaid # mermaid diagrams 
+        - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  
+  - attr_list
+  - md_in_html
+
+plugins:
+    - mkdocs-jupyter
+
